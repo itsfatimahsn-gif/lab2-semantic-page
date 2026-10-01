@@ -111,26 +111,16 @@
         <section id="contact">
             <h2>Contact Me</h2>
 
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post">
 
                 <p>
                     <label for="name">Your Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                    >
+                    <input type="text" id="name" name="name" required>
                 </p>
 
                 <p>
                     <label for="email">Email Address:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                    >
+                    <input type="email" id="email" name="email" required>
                 </p>
 
                 <p>
@@ -149,64 +139,30 @@
                     <legend>How should I reply?</legend>
 
                     <p>
-                        <input
-                            type="radio"
-                            id="email-reply"
-                            name="reply"
-                            value="email"
-                            required
-                        >
+                        <input type="radio" id="email-reply" name="reply" value="email" required>
                         <label for="email-reply">Email</label>
                     </p>
 
                     <p>
-                        <input
-                            type="radio"
-                            id="phone-reply"
-                            name="reply"
-                            value="phone"
-                        >
+                        <input type="radio" id="phone-reply" name="reply" value="phone">
                         <label for="phone-reply">Phone</label>
                     </p>
 
                 </fieldset>
 
                 <p>
-                    <input
-                        type="checkbox"
-                        id="updates"
-                        name="updates"
-                    >
-
-                    <label for="updates">
-                        Send me occasional updates
-                    </label>
+                    <input type="checkbox" id="updates" name="updates">
+                    <label for="updates">Send me occasional updates</label>
                 </p>
 
                 <p>
                     <label for="date">Preferred Contact Date:</label>
-
-                    <input
-                        type="date"
-                        id="date"
-                        name="date"
-                        required
-                    >
+                    <input type="date" id="date" name="date" required>
                 </p>
 
                 <p>
-                    <label for="urgency">
-                        How urgent is this?
-                    </label>
-
-                    <input
-                        type="range"
-                        id="urgency"
-                        name="urgency"
-                        min="1"
-                        max="10"
-                        value="5"
-                    >
+                    <label for="urgency">How urgent is this?</label>
+                    <input type="range" id="urgency" name="urgency" min="1" max="10" value="5">
                 </p>
 
                 <p>
@@ -214,26 +170,20 @@
                 </p>
 
                 <p>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        minlength="10"
-                        required
-                    ></textarea>
+                    <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
                 </p>
 
                 <p>
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                    <button type="reset">
-                        Reset Form
-                    </button>
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Reset Form</button>
                 </p>
 
             </form>
+
+            <button type="button" id="clear-storage">
+                Clear Saved Data
+            </button>
+
         </section>
 
     </main>
@@ -241,6 +191,8 @@
     <footer>
         <p>Copyright 2026 My Profile</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
