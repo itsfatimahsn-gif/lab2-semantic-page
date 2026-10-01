@@ -78,8 +78,6 @@
             </p>
         </aside>
 
-        <!-- Task 4: Multimedia -->
-
         <section id="media">
             <h2>Multimedia</h2>
 
@@ -111,9 +109,131 @@
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
 
-            <p>You can contact me through the contact form.</p>
+            <form action="#" method="post">
+
+                <p>
+                    <label for="name">Your Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="topic">Contact Topic:</label>
+
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Select a topic --</option>
+                        <option value="web">Web Development</option>
+                        <option value="project">Project</option>
+                        <option value="general">General Question</option>
+                    </select>
+                </p>
+
+                <fieldset>
+
+                    <legend>How should I reply?</legend>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="email-reply"
+                            name="reply"
+                            value="email"
+                            required
+                        >
+                        <label for="email-reply">Email</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="phone-reply"
+                            name="reply"
+                            value="phone"
+                        >
+                        <label for="phone-reply">Phone</label>
+                    </p>
+
+                </fieldset>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="updates"
+                        name="updates"
+                    >
+
+                    <label for="updates">
+                        Send me occasional updates
+                    </label>
+                </p>
+
+                <p>
+                    <label for="date">Preferred Contact Date:</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="urgency">
+                        How urgent is this?
+                    </label>
+
+                    <input
+                        type="range"
+                        id="urgency"
+                        name="urgency"
+                        min="1"
+                        max="10"
+                        value="5"
+                    >
+                </p>
+
+                <p>
+                    <label for="message">Your Message:</label>
+                </p>
+
+                <p>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        minlength="10"
+                        required
+                    ></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                    <button type="reset">
+                        Reset Form
+                    </button>
+                </p>
+
+            </form>
         </section>
 
     </main>
